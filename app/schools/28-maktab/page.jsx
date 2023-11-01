@@ -18,7 +18,8 @@ const getTopics = async () => {
 
 
 export default async function TopicsList() {
-    const { mavzula } = await getTopics();
+    const a = await getTopics()
+    const mavzula = a?.mavzula
     const maktablar = Array.from({ length: 54, }, (_, index) => index + 1);
 
     const getRowBackgroundColor = (index) => {

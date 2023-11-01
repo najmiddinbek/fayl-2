@@ -20,7 +20,8 @@ const getTopics = async () => {
 
 
 export default async function Navbar() {
-    const { topics } = await getTopics();
+    const a = await getTopics()
+    const mavzula = a?.mavzula
 
 
     return (

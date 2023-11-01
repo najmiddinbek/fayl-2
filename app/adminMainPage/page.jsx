@@ -18,7 +18,8 @@ const getTopics = async () => {
 };
 
 export default async function page() {
-    const { topics } = await getTopics();
+    const a = await getTopics()
+    const topics = a?.topics
 
     const options = Array.from({ length: 28 }, (_, index) => index + 1);
 
