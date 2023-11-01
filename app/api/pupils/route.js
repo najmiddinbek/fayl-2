@@ -1,4 +1,4 @@
-import connectMongoDB from "../../../lib/mongodb";
+import { connectMongoDB } from "../../../lib/mongodb";
 import Mavzular from "../../../models/28-maktab";
 import { NextResponse } from "next/server";
 
